@@ -38,6 +38,7 @@ class RubyTestView extends View
     atom.commands.add "atom-workspace", "ruby-test:test-previous", => @testPrevious()
     atom.commands.add "atom-workspace", "ruby-test:test-all", => @testAll()
     atom.commands.add "atom-workspace", "ruby-test:cancel", => @cancelTest()
+    atom.commands.add "atom-workspace", "ruby-test:close", => @closePanel()
     new ResizeHandle(@)
 
   # Returns an object that can be retrieved when package is activated
